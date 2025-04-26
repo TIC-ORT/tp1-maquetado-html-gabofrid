@@ -54,6 +54,7 @@ body{
 }
 .middle
 {
+    padding-top: 20px;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 55vh;
@@ -89,3 +90,49 @@ body{
     background-color: white;
     border-radius: 4px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cuadro {
+    width: 30%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    display: block;
+    border-radius: 5px;
+}
+
+.celeste {
+    background-color: rgb(196, 237, 241);
+}
+.celeste::before {
+    background-color: rgb(171,224,229);
+}
+
+.rojo {
+    background-color:rgb(255,153, 120) ;
+}
+.rojo::before {
+    background-color: rgb(246 , 131, 96);
+}
+
+.naranja {
+    background-color: rgb(255,214 , 128);
+}
+.naranja::before {
+    background-color: rgb(255, 200 , 109 );
+}   
